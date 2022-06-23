@@ -1,0 +1,22 @@
+ <table class="table ">
+    <thead class="table-dark ">
+        <tr> 
+            <th>Titulo</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#if totalProduct }}
+        {{#each totalProduct}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.price}}</td>
+            <td><img src="{{this.thumbnail}}" alt="Imagen"></td>
+        </tr> 
+        {{/each}}
+    {{/if}}
+    </tbody>
+</table>
+
+<a href="../formulario"> Agregar nuevos Productos</a>
